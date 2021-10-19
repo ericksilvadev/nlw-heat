@@ -1,7 +1,11 @@
+import './styles/main.scss';
+import { Login, MessageList } from './components';
+
 export function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <main className="content-wrapper">
+      <MessageList />
+      <Login />
+    </main>
   )
 }
