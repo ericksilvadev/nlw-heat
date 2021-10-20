@@ -41,8 +41,8 @@ export default function MessageList() {
       <img src={ logo } alt="DoWhile 2021" />
 
       <ul className="message-list">
-        { messages.map(({ text, user, id }, i) => (
-          <li className="message" key={ id || i }>
+        { messages.map(({ text, user }, i) => (
+          <li className="message" key={  i }>
             <p>{ text }</p>
             <div className="message-user">
               <div className="user-image">
