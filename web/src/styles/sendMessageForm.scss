@@ -1,0 +1,144 @@
+.form-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: initial;
+
+  .message-form-wrapper {
+    background: $soft-dark;
+    padding: 1.5em;
+    align-self: center;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  
+    position: relative;
+  
+    .sign-out-btn {
+      background: none;
+      border: 0;
+      color: $darker-white;
+  
+      position: absolute;
+      left: 1.5em;
+      top: 1.5em;
+  
+      cursor: pointer;
+  
+      &:hover {
+        filter: brightness(0.9);
+      }
+  
+      svg {
+        font-size: 1.8em;
+      }
+    }
+  
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .user-image {
+        padding: 3px;
+        background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
+        border-radius: 50%;
+        line-height: 0;
+  
+        img {
+          width: 6em;
+          height: 6em;
+          border-radius: 50%;
+          border: 4px solid $dark;;
+        }
+      }
+  
+      .user-name {
+        font-size: 1.5em;
+        line-height: 1.7em;
+        margin-top: 1em;
+      }
+  
+      .user-login {
+        display: flex;
+        align-items: center;
+  
+        margin-top: 0.5em;
+        color: $darker-white;
+  
+        svg {
+          margin-right: 0.5em;
+        }
+      }
+    }
+  
+    .send-message-form {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      margin-top: 3em;
+      background: #202024;
+  
+      label {
+        padding: 1.15em 1.5em;
+        font-size: 1.25em;
+        background: #29292e;
+        font-weight: bold;
+        text-align: left;
+      }
+  
+      textarea {
+        background: none;
+        border: none;
+        padding: 1.5em;
+        resize: none;
+        height: 160px;
+        color: $light;
+        font-size: 1em;
+        line-height: 1.5em;
+        outline: none;
+  
+        &::placeholder {
+          color: #8d8d99;
+        }
+      }
+  
+      button {
+        align-self: flex-end;
+        border: 0;
+        background: $pink;
+        color: white;
+        margin: 1.5em;
+        padding: 0 2.3em;
+        height: 2.5em;
+        font-size: 0.9em;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.2s;
+        cursor: pointer;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  
+  }
+  .feedback {
+    padding: 1.5em;
+    position: absolute;
+    background: #1B873F;
+    color: white;
+  
+    top: 2em;
+    right: -10em;
+  }
+}
