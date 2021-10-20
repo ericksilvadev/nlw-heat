@@ -1,7 +1,9 @@
 $light: #e1e1e6;
+$darker-white: #c4c4cc;
 $dark: #121214;
 $soft-dark: #17171a;
 $yellow: #ffcd1e;
+$pink: #ff008e;
 $btn-color: #09090a;
 
 * {
@@ -15,4 +17,10 @@ $btn-color: #09090a;
 body {
   color: #e1e1e6;
   background: #121214;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 12px;
+  }
 }
