@@ -1,0 +1,30 @@
+.loading {
+  height: 100vh;
+  width: 100vw;
+  // background: url(../assets/background.svg) no-repeat;
+  // background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 200px;
+    height: 200px;
+    animation: rotateLogo .7s infinite;
+  }
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
