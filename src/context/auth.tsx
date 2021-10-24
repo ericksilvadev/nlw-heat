@@ -46,9 +46,9 @@ export function AuthProvider({ children }: AuthProvider) {
     setLoading(true);
     const { data: { token, user } } = await api.post<AuthResponse>('authenticate', {
       code,
-    })
+    });
 
-    localStorage.setItem('@dowhile:token', token)
+    localStorage.setItem('@dowhile:token', token);
 
     await setLoading(false);
 
