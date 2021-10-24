@@ -15,7 +15,7 @@ type Message = {
 
 const messagesQueue: Message[] =[];
 
-const socket = io('https://nlw-heat-server-node.herokuapp.com/');
+const socket = io(process.env.REACT_APP_API_URL || '');
 
 socket.on('new_message', (newMessage: Message) => {
   messagesQueue.push(newMessage);
