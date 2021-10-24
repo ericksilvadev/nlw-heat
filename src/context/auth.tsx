@@ -8,10 +8,6 @@ type User = {
   avatar_url: string;
 };
 
-type Loading = {
-  loading: boolean;
-}
-
 type AuthContextData = {
   user: User | null;
   signInUrl: string;

@@ -25,7 +25,11 @@ export default function MessageList() {
   const [messages, setMessages] = useState<Message[]>([]);
 
   useEffect(() => {
-    api.get<Message[]>('messages/last3').then((response: any) => setMessages(response.data));
+    try {
+      api.get<Message[]>('messages/last3').then((response: any) => setMessages(response.data));
+    } catch (err) {
+      console.log(err);
+    }
   }, []);
 
   useEffect(() => {
