@@ -3,7 +3,7 @@ import { VscGithubInverted } from 'react-icons/vsc'
 import { AuthContext } from '../context/auth';
 
 export default function Login() {
-  const { signInUrl, setLoading } = useContext(AuthContext);
+  const { signInUrl } = useContext(AuthContext);
 
   return (
     <div

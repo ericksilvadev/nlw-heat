@@ -19,7 +19,11 @@ export default function SendMessageForm() {
 
     setTimeout(() => setFeedback(false), 3000);
 
-    await api.post('messages', { message });
+    try {
+      await api.post('messages', { message });
+    } catch (err) {
+      console.log(err);
+    }
 
     setMessage('');
   }
