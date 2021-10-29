@@ -9,9 +9,9 @@ export function App() {
   if (loading) return <Loading />;
 
   return (
-    <main className={`content-wrapper ${ user ? 'signed' : '' }`}>
+    <main className={`content-wrapper ${user ? 'signed' : ''}`}>
       <MessageList />
-      { user ? <SendMessageForm /> : <Login /> }
+      {user ? <SendMessageForm /> : <Login />}
     </main>
-  )
+  );
 }
